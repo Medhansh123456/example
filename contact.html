@@ -4,24 +4,38 @@
     <meta carset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="contact.css">
     <title>Document</title>
 </head>
 <body>
 
-  <center><h3 style="color: white; font-family: sans-serif;">PORTFOLIO</h3></center>
 
+  <nav>
+    <div class="logo">
+      Portfolio
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i  class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a  href="home.html">HOME</a></li>
+      <li><a href="">ABOUT</a></li>
+      <li><a class="active"href="contact.html">CONTACT</a></li>
+      <li><a href="service.html">SERVICE</a></li>
+     
 
-    <div class="nav">
-        <ul>
-          <li><a href="service.html">SERVICE</a></li>
-          <li><a href="contact.html" class="active">CONTACT</a></li>
-          <li><a href="skill.html">SKILLS</a></li>
-          <li><a href="home.html" >HOME</a></li>
-        </ul>
-      </div>
+    </ul>
+ </nav>
 
+ <style>
+   .fas fa-bars{
+   color: black;
+   }
+ </style>
 
+ <center><h1 style="padding-top:50px; color: rgb(0, 0, 0);">Contact Me</h1></center>
 
     <section>
         <div class="container">
@@ -53,183 +67,8 @@
         <div id="status"></div>
       </section>
 
-      <style>
-        * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: "Montserrat";
-  }
-
-  body{
-background-color: #000003;
-
-}
-
-     ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 6px 10px;
-  overflow: hidden;
-  background-color:rgb(0,0,0);
-}
-
-li {
-  float: right;
-  padding: 0 10px;
-}
-
-.active {
-  background-color:rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 5px 16px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: medium;
-  border-color:rgb(0, 0, 0) ;
-  border: solid;
-  border-radius: 50px;
-  color:rgb(255, 254, 254);
-font-weight: bold;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  border-color:rgba(255, 255, 255, 0.616);
-}
-
-  section {
-    height: 120vh;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .container {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0px 0px 20px #00000010;
-    background-color: white;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  .form-group {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid rgba(128, 128, 128, 0.199);
-    margin-top: 5px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  button[type="submit"] {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 20px;
-    font-size: 24px;
-    border-radius: 8px;
-    font-family: "Montserrat";
-    color: rgb(0, 0, 0);
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s ease background-color;
-  }
-  button[type="submit"]:hover {
-    background-color: rgba(0, 0, 0, 0.473);
-  }
-  #status {
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  #status.success {
-    background-color: rgb(211, 250, 153);
-    animation: status 4s ease forwards;
-  }
-
-  .med{
-  position: absolute;
-  top: -55px;
-
-}
-
-  #status.error {
-    background-color: rgb(250, 129, 92);
-    color: white;
-    animation: status 4s ease forwards;
-  }
-  @keyframes status {
-    0% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    90% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    100% {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
-
-  @media only screen and (max-width: 360px){
-    li a{
-  padding: 5px 5px;
-  font-size:small;
-  }
-
-  h3{
-    padding-top: 17px;
-  }
-
-  ul{
-    padding-top: 30px;
-    padding-left: 1px;
-  
-  }
-}
-
-      </style>
-
       
-<SCRIPT language=JavaScript>
 
-  ///disable right click////////////////////////////////////////////////////////////////////  
-  var message="Function is disabled";
-  function rtclickcheck(keyp){
-    if (navigator.appName == "Netscape" && keyp.which == 3){
-     alert(message); return false; }
-  
-  if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
-   alert(message); return false; } }
-  
-  document.onmousedown = rtclickcheck;
-</SCRIPT>
+
 </body>
 </html>

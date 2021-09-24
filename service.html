@@ -4,161 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Document</title>
 </head>
 <body>
-  
-  <center><h3 style="color: white; font-family: sans-serif;">PORTFOLIO</h3></center>
-
-
-    <div class="nav">
+    <nav>
+        <div class="logo">
+          Portfolio
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
         <ul>
-          <li><a href="service.html" class="active">SERVICE</a></li>
-          <li><a href="contact.html" >CONTACT</a></li>
-          <li><a href="skill.html">SKILLS</a></li>
-          <li><a href="home.html" >HOME</a></li>
+           <li><a href="home.html">Home</a></li>
+           <li><a href="">About</a></li>
+           <li><a   href="contact.html">Contact</a></li>
+           <li><a class="active" href="service.html">Services</a></li>
+         
+    
         </ul>
-      </div>
-      <h2 class="or" style="font-family: cursive; color: rgb(255, 255, 255);">OR</h2>
-
-
-    
-
-      <img class="web" src="web.jpg" width="500px" >
-      <h2 class="webd">WEBSITE DEVLOPMENT</h2>
-
-      <img class="log" src="logo.jpg" >
-      <h2 class="logd">LOGO DESIGNING</h2>
+     </nav>
+    <section>
+        <h3>Our Services</h3>
+        <p class="section-lead">Web development using HTML CSS and JAVASCRIPT and<br>
+         logo Design
+        </p>
+        <div class="services-grid">
+          <div class="service service1">
+            <i class="ti-bar-chart"></i>
+            <h4>WEB DESIGN</h4>
+            <p>As a web designer, you'll plan, create and code web pages, using both technical and non-technical skills to produce websites that fit your customers' requirements. Being involved in the technical and graphical aspects of pages, you'll determine not only the look of the website but how it works as well.</p>
+          </div>
       
-   
-     
-       
-    <style>
-  
-body{
-    background-color: rgb(0, 0, 0);
-  }
-
-  .log{
-    width: 460px; position:absolute; right: 5%; top: 22%
-  }
-  .web{
-    position: absolute; right: 58%; top: 130px;
-  }
-
-.or{
-  position: absolute;
-  right: 48.5%;
-  top: 43%;
-}
-
-
-
-
-  .webd{
-  color:rgb(255, 254, 254); ;
-  font-family: sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top: 80%;
-  right: 68%;
-}
-
-.logd{
-  color:rgb(255, 254, 254); ;
-  font-family: sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top:80%;
-  right:15% ;
-}
-
-
-          ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:rgb(0,0,0);
-}
-
-li {
-  float: right;
-  padding: 0 10px;
-}
-
-.active {
-  background-color:rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-}
-.med{
-  position: absolute;
-  top: -55px;
-
-}
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 5px 16px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: medium;
-  border-color:rgb(0, 0, 0) ;
-  border: solid;
-  border-radius: 50px;
-  color:rgb(255, 254, 254);
-font-weight: bold;
-
-
-}
-@media only screen and (max-width: 360px){
-    li a{
-  padding: 5px 5px;
-  font-size:small;
-  }
-
-.log{
-width: 200px;
-height: 150px;
-top: 63%;
-right: 25%;
- }
-
- .or{
-   top: 50%;
- }
-
- .webd{
-   top: 43%;
-   right: 15%;
- }
-
- .web{
-   top: 20%;
-   right: 25%;
-   width: 200px;
- }
-
-  ul{
-    padding-top: 10px;
-    padding-left: 1px;
-  
-  }
-
-  .logd{
-    right: 85px;
-    top: 90%;
-  }
-}
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  border-color:rgba(255, 255, 255, 0.616);
-}
-    </style>
-
-
-    
+          <div class="service service2">
+            <i class="ti-light-bulb"></i>
+            <h4>WEB DEVELOPMENT</h4>
+            <p>A Web Developer is responsible for the coding, design and layout of a website according to a company's specifications. As the role takes into consideration user experience and function, a certain level of both graphic design and computer programming is necessary</p>
+          </div>
+      
+          <div class="service service3">
+            <i class="ti-money"></i>
+            <h4>LOGO DESING</h4>
+            <p>Logo designers are professional graphic designers who create unique and custom brand imagery for the individual or company who hired them. Logo designers can either be freelancers, full-time employees at a design firm or advertising agency, or work under a temporary contract..</p>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
